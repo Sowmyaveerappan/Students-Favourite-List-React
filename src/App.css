@@ -1,38 +1,99 @@
-.App {
+/* Styling for the entire app */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+#link{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  font-size: xx-large;
+  background-color: #f76c6c;
+  padding: 20px;
+  
+  
+  
+  
+}
+
+/* Header styling */
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Student List section */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Button styling */
+button {
+  padding: 8px 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[disabled] {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+button:hover:not([disabled]) {
+  background-color: #555;
+}
+
+/* Favorite List Section */
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Flexbox for organizing the list layout */
+.student-list,
+.favorite-list {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  margin-right: 2%;
+  
+  
+}
+
+
+
+/* Optional styling for layout */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-color: #f76c6c;
+  padding: 10px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header a {
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header a:hover {
+  text-decoration: underline;
 }
